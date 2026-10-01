@@ -1,30 +1,605 @@
-// ================= MOBILE MENU =================
+<!DOCTYPE html>
+<html lang="en">
 
-const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
+<head>
+    <meta charset="UTF-8">
 
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Portfolio
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+            <!-- Mobile Menu -->
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </nav>
+    </header>
 
 
-// Close menu after clicking a link
+    <!-- ================= HOME ================= -->
 
-document.querySelectorAll(".nav-links a").forEach(link => {
+    <section id="home" class="home">
 
-    link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-    });
+        <div class="home-content">
 
-});
+            <p class="small-text">
+                Hello, I'm
+            </p>
+
+            <h1>
+                Your Name
+            </h1>
+
+            <h2>
+                B.Sc Information Technology Student
+            </h2>
+
+            <p>
+                I am passionate about technology, programming,
+                web development and creating innovative solutions.
+            </p>
+
+            <div class="home-buttons">
+
+                <a href="#contact" class="btn">
+                    Contact Me
+                </a>
+
+                <a href="#projects" class="btn outline-btn">
+                    View Projects
+                </a>
+
+            </div>
+
+            <div class="social-icons">
+
+                <a href="#" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:yourmail@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
 
 
-// ================= CONTACT FORM =================
+        <!-- Profile Image -->
 
-function sendMessage(event) {
+        <div class="profile-container">
 
-    event.preventDefault();
+            <div class="profile-circle">
 
-    alert("Thank you! Your message has been submitted.");
+                <img src="images/profile.jpg"
+                     alt="Profile Photo">
 
-}
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <img src="images/profile.jpg"
+                     alt="Profile">
+
+            </div>
+
+            <div class="about-content">
+
+                <h3>
+                    I'm a B.Sc IT Student
+                </h3>
+
+                <p>
+                    I am a motivated Information Technology student
+                    with an interest in software development,
+                    web technologies and emerging technologies.
+                </p>
+
+                <p>
+                    I enjoy learning new technologies and developing
+                    practical projects that solve real-world problems.
+                </p>
+
+                <div class="about-info">
+
+                    <p>
+                        <strong>Name:</strong>
+                        Your Name
+                    </p>
+
+                    <p>
+                        <strong>Degree:</strong>
+                        B.Sc Information Technology
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong>
+                        Tamil Nadu, India
+                    </p>
+
+                    <p>
+                        <strong>Email:</strong>
+                        yourmail@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education"
+             class="section light-section">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+        <div class="education-container">
+
+            <div class="education-card">
+
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        2023 - 2026
+                    </span>
+
+                    <h3>
+                        B.Sc Information Technology
+                    </h3>
+
+                    <h4>
+                        Your College Name
+                    </h4>
+
+                    <p>
+                        Studying programming, database management,
+                        networking, software development and
+                        modern technologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        2021 - 2023
+                    </span>
+
+                    <h3>
+                        Higher Secondary Education
+                    </h3>
+
+                    <h4>
+                        Your School Name
+                    </h4>
+
+                    <p>
+                        Completed higher secondary education with
+                        an interest in computer science and technology.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section">
+
+        <h2 class="section-title">
+            Technical Skills
+        </h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+
+                <i class="fab fa-python"></i>
+
+                <h3>Python</h3>
+
+                <div class="progress">
+                    <div class="progress-bar"
+                         style="width: 85%;">
+                    </div>
+                </div>
+
+                <span>85%</span>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <i class="fab fa-java"></i>
+
+                <h3>Java</h3>
+
+                <div class="progress">
+                    <div class="progress-bar"
+                         style="width: 80%;">
+                    </div>
+                </div>
+
+                <span>80%</span>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <i class="fab fa-html5"></i>
+
+                <h3>HTML</h3>
+
+                <div class="progress">
+                    <div class="progress-bar"
+                         style="width: 90%;">
+                    </div>
+                </div>
+
+                <span>90%</span>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <i class="fab fa-css3-alt"></i>
+
+                <h3>CSS</h3>
+
+                <div class="progress">
+                    <div class="progress-bar"
+                         style="width: 85%;">
+                    </div>
+                </div>
+
+                <span>85%</span>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <i class="fab fa-js"></i>
+
+                <h3>JavaScript</h3>
+
+                <div class="progress">
+                    <div class="progress-bar"
+                         style="width: 75%;">
+                    </div>
+                </div>
+
+                <span>75%</span>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <i class="fas fa-database"></i>
+
+                <h3>SQL</h3>
+
+                <div class="progress">
+                    <div class="progress-bar"
+                         style="width: 80%;">
+                    </div>
+                </div>
+
+                <span>80%</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects"
+             class="section light-section">
+
+        <h2 class="section-title">
+            My Projects
+        </h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+
+                <h3>
+                    Project One
+                </h3>
+
+                <p>
+                    A web-based project developed using
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <span>
+                    HTML • CSS • JavaScript
+                </span>
+
+                <a href="#" class="project-btn">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+
+                <h3>
+                    Project Two
+                </h3>
+
+                <p>
+                    A technology-based project designed to
+                    solve a real-world problem.
+                </p>
+
+                <span>
+                    Python • Database
+                </span>
+
+                <a href="#" class="project-btn">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+
+                <h3>
+                    Project Three
+                </h3>
+
+                <p>
+                    An innovative application developed as
+                    part of an academic project.
+                </p>
+
+                <span>
+                    Java • MySQL
+                </span>
+
+                <a href="#" class="project-btn">
+                    View Project
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section">
+
+        <h2 class="section-title">
+            Contact Me
+        </h2>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>
+                    Let's Connect
+                </h3>
+
+                <p>
+                    Feel free to contact me for opportunities,
+                    collaborations and project discussions.
+                </p>
+
+                <div class="contact-item">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <span>
+                        yourmail@gmail.com
+                    </span>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fas fa-phone"></i>
+
+                    <span>
+                        +91 XXXXX XXXXX
+                    </span>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fas fa-location-dot"></i>
+
+                    <span>
+                        Tamil Nadu, India
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form">
+
+                <input type="text"
+                       placeholder="Your Name"
+                       required>
+
+                <input type="email"
+                       placeholder="Your Email"
+                       required>
+
+                <input type="text"
+                       placeholder="Subject"
+                       required>
+
+                <textarea
+                    rows="6"
+                    placeholder="Your Message"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-social">
+
+            <a href="#">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:yourmail@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+        <p>
+            © 2026 Your Name. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
