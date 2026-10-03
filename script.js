@@ -1,21 +1,15 @@
-<script>
-
-document.querySelectorAll('nav a').forEach(function(link) {
-
-    link.addEventListener('click', function(event) {
-
-        const target = document.querySelector(this.getAttribute('href'));
+document.querySelectorAll("nav a").forEach(function(link) {
+    link.addEventListener("click", function(event) {
+        const target = document.querySelector(
+            this.getAttribute("href")
+        );
 
         if (target) {
             event.preventDefault();
 
             target.scrollIntoView({
-                behavior: 'smooth'
+                behavior: "smooth"
             });
         }
-
     });
-
 });
-
-</script>
