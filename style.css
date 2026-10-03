@@ -1,12 +1,10 @@
-<style>
-
 :root {
     --bg: #090714;
-    --bg-light: #110c20;
+    --bg2: #100b1d;
     --purple: #9b6cff;
-    --purple-light: #b99aff;
+    --light-purple: #bda2ff;
     --text: #ffffff;
-    --muted: #aaa3bd;
+    --muted: #aaa4b8;
     --border: rgba(255,255,255,0.12);
 }
 
@@ -18,16 +16,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     background: var(--bg);
     color: var(--text);
+    font-family: Arial, sans-serif;
 }
-
-/* NAVBAR */
 
 header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
     background: rgba(9,7,20,0.95);
@@ -35,7 +32,7 @@ header {
 }
 
 .navbar {
-    max-width: 1150px;
+    max-width: 1100px;
     margin: auto;
     padding: 20px 30px;
     display: flex;
@@ -54,7 +51,7 @@ header {
 
 nav {
     display: flex;
-    gap: 28px;
+    gap: 25px;
 }
 
 nav a {
@@ -67,8 +64,6 @@ nav a {
 nav a:hover {
     color: var(--purple);
 }
-
-/* SECTIONS */
 
 section {
     min-height: 100vh;
@@ -94,6 +89,7 @@ section {
     margin-bottom: 50px;
 }
 
+
 /* HOME */
 
 #home {
@@ -101,7 +97,12 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: radial-gradient(circle, #281653, #100c20, #090714);
+    background: radial-gradient(
+        circle,
+        #291653 0%,
+        #120c22 40%,
+        #090714 75%
+    );
 }
 
 .home-content {
@@ -116,7 +117,7 @@ section {
 }
 
 .home-content h1 {
-    font-size: 65px;
+    font-size: 68px;
     line-height: 1.1;
     margin-bottom: 20px;
 }
@@ -151,7 +152,7 @@ section {
 }
 
 .btn-primary:hover {
-    background: var(--purple-light);
+    background: var(--light-purple);
     transform: translateY(-3px);
 }
 
@@ -165,10 +166,11 @@ section {
     color: var(--purple);
 }
 
+
 /* ABOUT */
 
 #about {
-    background: var(--bg-light);
+    background: var(--bg2);
 }
 
 .about-content {
@@ -176,19 +178,19 @@ section {
     margin: auto;
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
-    gap: 60px;
+    gap: 65px;
     align-items: center;
 }
 
 .about-name {
     color: var(--purple);
     font-size: 12px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     margin-bottom: 15px;
 }
 
 .about-heading h3 {
-    font-size: 36px;
+    font-size: 38px;
     line-height: 1.4;
 }
 
@@ -196,48 +198,50 @@ section {
     color: var(--muted);
     font-size: 14px;
     line-height: 1.8;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
-
-/* QUALITY BOXES */
 
 .qualities {
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px;
+    gap: 16px;
 }
 
 .quality-box {
-    min-height: 90px;
+    min-height: 95px;
     padding: 20px;
-    background: rgba(255,255,255,0.03);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 9px;
+    background: rgba(255,255,255,0.03);
     transition: 0.3s;
 }
 
 .quality-box:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
     border-color: var(--purple);
-    background: rgba(155,108,255,0.08);
 }
 
-.quality-box span {
+.quality-box span,
+.skill-box span {
     color: var(--purple);
     font-size: 10px;
-    display: block;
-    margin-bottom: 7px;
 }
 
 .quality-box h4 {
+    margin-top: 8px;
     font-size: 14px;
 }
 
+
 /* SKILLS */
 
+#skills {
+    background: var(--bg);
+}
+
 .skills-container {
-    max-width: 850px;
+    max-width: 900px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -245,26 +249,35 @@ section {
 }
 
 .skill-box {
+    min-height: 150px;
     padding: 25px;
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 10px;
     background: rgba(255,255,255,0.03);
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    border-color: var(--purple);
 }
 
 .skill-box h3 {
-    color: var(--purple);
-    margin-bottom: 8px;
+    margin: 12px 0 8px;
+    font-size: 20px;
 }
 
 .skill-box p {
     color: var(--muted);
     font-size: 14px;
+    line-height: 1.6;
 }
+
 
 /* PROJECTS */
 
 #projects {
-    background: var(--bg-light);
+    background: var(--bg2);
 }
 
 .projects-container {
@@ -297,6 +310,7 @@ section {
     line-height: 1.7;
 }
 
+
 /* EDUCATION */
 
 .education-box {
@@ -314,12 +328,14 @@ section {
 
 .education-box p {
     color: var(--muted);
+    margin-bottom: 5px;
 }
+
 
 /* CONTACT */
 
 #contact {
-    background: var(--bg-light);
+    background: var(--bg2);
     text-align: center;
 }
 
@@ -345,6 +361,7 @@ section {
     color: var(--muted);
 }
 
+
 /* FOOTER */
 
 footer {
@@ -355,6 +372,7 @@ footer {
     border-top: 1px solid var(--border);
     font-size: 13px;
 }
+
 
 /* MOBILE */
 
@@ -378,6 +396,7 @@ footer {
 
     .about-content {
         grid-template-columns: 1fr;
+        gap: 35px;
     }
 
     .skills-container,
@@ -385,13 +404,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .qualities {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .section-title {
         font-size: 34px;
     }
 }
-
-</style>
