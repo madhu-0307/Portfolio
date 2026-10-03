@@ -6,378 +6,176 @@
 
     <title>Madhu | Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header class="navbar">
-    <a href="#home" class="logo">Madhu<span>.</span></a>
-
-    <nav id="navMenu">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <button class="menu-btn" id="menuBtn">☰</button>
-</header>
-
-
-<!-- HOME -->
-<section id="home" class="hero">
-
-    <div class="hero-content">
-
-        <p class="eyebrow">HELLO, I'M</p>
-
-        <h1>Madhu</h1>
-
-        <h2>IT Student & Creative Developer</h2>
-
-        <p class="hero-description">
-            I am a final-year Information Technology student passionate
-            about web development, creative design and emerging technologies.
-            I enjoy learning new skills and turning ideas into useful digital experiences.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#projects" class="btn primary">
-                View My Projects
-            </a>
-
-            <a href="#contact" class="btn outline">
-                Contact Me
-            </a>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
-/* ABOUT */
-
-.about-content {
-    max-width: 950px;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 75px;
-
-    align-items: center;
-}
-
-.about-name {
-    font-family: "DM Mono", monospace;
-    color: var(--purple);
-
-    font-size: 12px;
-    letter-spacing: 2px;
-
-    margin-bottom: 15px;
-}
-
-.about-heading h3 {
-    font-family: "Playfair Display", serif;
-
-    font-size: 35px;
-    font-weight: 500;
-
-    line-height: 1.4;
-}
-
-.about-description p {
-    color: var(--muted);
-    font-size: 14px;
-
-    margin-bottom: 18px;
-}
-
-
-/* QUALITY BOXES */
-
-.qualities {
-    margin-top: 35px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    gap: 18px;
-}
-
-.quality-box {
-    min-height: 90px;
-
-    padding: 20px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    background: rgba(255, 255, 255, 0.025);
-
-    border: 1px solid var(--border);
-    border-radius: 8px;
-
-    transition: 0.3s;
-}
-
-.quality-box:hover {
-    border-color: var(--purple);
-
-    background: rgba(139, 92, 246, 0.07);
-
-    transform: translateY(-4px);
-}
-
-.quality-box span {
-    font-family: "DM Mono", monospace;
-
-    color: var(--purple);
-
-    font-size: 10px;
-
-    margin-bottom: 7px;
-}
-
-.quality-box h4 {
-    color: var(--text);
-
-    font-size: 14px;
-    font-weight: 500;
-}
-
-
-<!-- SKILLS -->
-<section id="skills" class="section alternate">
-
-    <div class="section-title">
-        <p>WHAT I WORK WITH</p>
-        <h2>My Skills</h2>
-    </div>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-            <span>01</span>
-            <h3>HTML</h3>
-            <p>Web Structure</p>
-        </div>
-
-        <div class="skill-card">
-            <span>02</span>
-            <h3>CSS</h3>
-            <p>Web Styling</p>
-        </div>
-
-        <div class="skill-card">
-            <span>03</span>
-            <h3>JavaScript</h3>
-            <p>Web Interaction</p>
-        </div>
-
-        <div class="skill-card">
-            <span>04</span>
-            <h3>Python</h3>
-            <p>Programming</p>
-        </div>
-
-        <div class="skill-card">
-            <span>05</span>
-            <h3>MySQL</h3>
-            <p>Database</p>
-        </div>
-
-        <div class="skill-card">
-            <span>06</span>
-            <h3>Git</h3>
-            <p>Version Control</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-
-    <div class="section-title">
-        <p>MY RECENT WORK</p>
-        <h2>Projects</h2>
-    </div>
-
-    <div class="projects-list">
-
-        <article class="project">
-
-            <div class="project-index">01</div>
-
-            <div class="project-info">
-                <h3>Boutique Website</h3>
-
-                <p>
-                    A modern boutique website designed to showcase
-                    products through a clean and user-friendly interface.
-                </p>
-
-                <small>HTML • CSS • JavaScript</small>
-            </div>
-
-        </article>
-
-
-        <article class="project">
-
-            <div class="project-index">02</div>
-
-            <div class="project-info">
-                <h3>Personal Portfolio</h3>
-
-                <p>
-                    A responsive portfolio website created to showcase
-                    my skills, projects, education and interests.
-                </p>
-
-                <small>HTML • CSS • JavaScript</small>
-            </div>
-
-        </article>
-
-
-        <article class="project">
-
-            <div class="project-index">03</div>
-
-            <div class="project-info">
-                <h3>IT Learning Projects</h3>
-
-                <p>
-                    Academic and practical projects developed while
-                    learning different concepts in Information Technology.
-                </p>
-
-                <small>Programming • Web • Database</small>
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- EDUCATION -->
-<section id="education" class="section alternate">
-
-    <div class="section-title">
-        <p>MY ACADEMIC JOURNEY</p>
-        <h2>Education</h2>
-    </div>
-
-    <div class="education-list">
-
-        <div class="education-row">
-
-            <div class="education-year">
-                2023 — 2026
-            </div>
-
-            <div>
-                <h3>B.Sc. Information Technology</h3>
-                <p>Undergraduate Degree</p>
-            </div>
-
-        </div>
-
-
-        <div class="education-row">
-
-            <div class="education-year">
-                Higher Secondary
-            </div>
-
-            <div>
-                <h3>Higher Secondary Education</h3>
-                <p>School Education</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-
-    <div class="section-title">
-        <p>LET'S CONNECT</p>
-        <h2>Contact Me</h2>
-    </div>
-
-    <div class="contact-content">
-
-        <div class="contact-left">
-
-            <h3>Let's create something meaningful.</h3>
-
-            <p>
-                I am interested in learning, collaborating and
-                exploring new opportunities in technology and web development.
-            </p>
-
-            <div class="contact-item">
-                <span>Email</span>
-                <p>yourmail@example.com</p>
-            </div>
-
-            <div class="contact-item">
-                <span>Location</span>
-                <p>Tamil Nadu, India</p>
-            </div>
-
-        </div>
-
-
-        <form class="contact-form">
-
-            <input type="text" placeholder="Your Name">
-
-            <input type="email" placeholder="Your Email">
-
-            <textarea rows="5" placeholder="Your Message"></textarea>
-
-            <button type="submit" class="btn primary">
-                Send Message
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-
-<footer>
-    <p>© 2026 Madhu. All Rights Reserved.</p>
-    <p>Designed & Developed with creativity.</p>
-</footer>
-
-
-<script src="script.js"></script>
-
-</body>
-</html>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        :root {
+            --bg: #090714;
+            --bg-light: #100c20;
+            --purple: #9b6cff;
+            --purple-light: #b99aff;
+            --text: #f5f1ff;
+            --muted: #aaa3bd;
+            --border: rgba(255,255,255,0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(9,7,20,0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .navbar {
+            max-width: 1150px;
+            margin: auto;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: "DM Mono", monospace;
+            font-size: 22px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .logo span {
+            color: var(--purple);
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: #aaa3bd;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--purple);
+        }
+
+        /* COMMON */
+
+        section {
+            min-height: 100vh;
+            padding: 120px 30px 80px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section-label {
+            font-family: "DM Mono", monospace;
+            color: var(--purple);
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-family: "Playfair Display", serif;
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        /* HOME */
+
+        #home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background:
+                radial-gradient(circle at center, #241548 0%, #100c20 35%, #090714 75%);
+        }
+
+        .home-content {
+            max-width: 800px;
+        }
+
+        .home-small {
+            font-family: "DM Mono", monospace;
+            color: var(--purple);
+            font-size: 12px;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .home-content h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 70px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .home-content h1 span {
+            color: var(--purple);
+        }
+
+        .home-content p {
+            max-width: 650px;
+            margin: auto;
+            color: var(--muted);
+            font-size: 16px;
+        }
+
+        .buttons {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--purple);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--purple-light);
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border:
