@@ -1,81 +1,79 @@
-/* =========================
-   MOBILE MENU
-========================= */
+// MOBILE MENU
 
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
-menuBtn.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
 });
 
 
-/* =========================
-   CLOSE MOBILE MENU
-========================= */
+// CLOSE MENU AFTER CLICKING A LINK
 
-const navItems = document.querySelectorAll(".nav-links a");
+document.querySelectorAll(".nav-links a").forEach(link => {
 
-navItems.forEach(function (item) {
+    link.addEventListener("click", () => {
 
-    item.addEventListener("click", function () {
-
-        navLinks.classList.remove("active");
+        navLinks.classList.remove("open");
 
     });
 
 });
 
 
-/* =========================
-   CONTACT FORM
-========================= */
+// PURPLE CURSOR GLOW
 
-const contactForm = document.querySelector(".contact-form");
+const glow = document.querySelector(".cursor-glow");
 
-contactForm.addEventListener("submit", function (event) {
+window.addEventListener("mousemove", (e) => {
 
-    event.preventDefault();
-
-    alert(
-        "Thank you for contacting me! " +
-        "Your message has been received."
-    );
-
-    contactForm.reset();
+    glow.style.left = `${e.clientX}px`;
+    glow.style.top = `${e.clientY}px`;
 
 });
 
 
-/* =========================
-   ACTIVE NAVIGATION
-========================= */
+// ACTIVE NAVIGATION LINK
 
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section[id]");
 const links = document.querySelectorAll(".nav-links a");
 
-window.addEventListener("scroll", function () {
+const observer = new IntersectionObserver(
 
-    let current = "";
+    (entries) => {
 
-    sections.forEach(function (section) {
+        entries.forEach(entry => {
 
-        const sectionTop = section.offsetTop - 150;
+            if (entry.isIntersecting) {
 
-        if (window.scrollY >= sectionTop) {
-            current = section.getAttribute("id");
-        }
+                links.forEach(link => {
+                    link.classList.remove("active");
+                });
 
-    });
+                const current =
+                    document.querySelector(
+                        `.nav-links a[href="#${entry.target.id}"]`
+                    );
 
-    links.forEach(function (link) {
+                if (current) {
+                    current.classList.add("active");
+                }
 
-        link.classList.remove("active");
+            }
 
-        if (link.getAttribute("href") === "#" + current) {
-            link.classList.add("active");
-        }
+        });
 
-    });
+    },
+
+    {
+        threshold: 0.35
+    }
+
+);
+
+
+sections.forEach(section => {
+
+    observer.observe(section);
 
 });
