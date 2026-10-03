@@ -9,19 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
-
-    <div class="logo">
-        Madhu<span>.</span>
-    </div>
+    <a href="#home" class="logo">Madhu<span>.</span></a>
 
     <nav id="navMenu">
         <a href="#home" class="active">Home</a>
@@ -33,7 +29,6 @@
     </nav>
 
     <button class="menu-btn" id="menuBtn">☰</button>
-
 </header>
 
 
@@ -42,28 +37,26 @@
 
     <div class="hero-content">
 
-        <p class="small-title">HELLO, I'M</p>
+        <p class="eyebrow">HELLO, I'M</p>
 
         <h1>Madhu</h1>
 
-        <h2>IT Student &amp; Creative Developer</h2>
+        <h2>IT Student & Creative Developer</h2>
 
-        <p class="hero-text">
-            I am a final-year Information Technology student interested
-            in web development, creative design and emerging technologies.
-            I enjoy learning new skills and building meaningful digital projects.
+        <p class="hero-description">
+            I am a final-year Information Technology student passionate
+            about web development, creative design and emerging technologies.
+            I enjoy learning new skills and turning ideas into useful digital experiences.
         </p>
 
         <div class="hero-buttons">
-
             <a href="#projects" class="btn primary">
                 View My Projects
             </a>
 
-            <a href="#contact" class="btn secondary">
+            <a href="#contact" class="btn outline">
                 Contact Me
             </a>
-
         </div>
 
     </div>
@@ -74,51 +67,54 @@
 <!-- ABOUT -->
 <section id="about" class="section">
 
-    <div class="section-heading">
-
+    <div class="section-title">
         <p>GET TO KNOW ME</p>
-
         <h2>About Me</h2>
-
     </div>
 
+    <div class="about-content">
 
-    <div class="about-container">
-
-        <div class="about-title">
-
+        <div class="about-heading">
             <h3>
-                Creative by nature,<br>
-                curious by choice.
+                Curious by nature,<br>
+                creative by choice.
             </h3>
-
         </div>
 
-
-        <div class="about-text">
+        <div class="about-description">
 
             <p>
                 I am a final-year B.Sc. Information Technology student
-                with an interest in web development and modern technologies.
-                I enjoy creating clean, user-friendly and responsive websites.
+                with a strong interest in web development and modern technologies.
             </p>
 
             <p>
+                I enjoy creating clean, responsive and user-friendly websites.
                 I am always interested in learning new technologies,
-                improving my technical skills and exploring creative ideas
-                through projects.
+                improving my skills and exploring creative ideas through projects.
             </p>
 
+            <div class="qualities">
 
-            <div class="traits">
+                <div>
+                    <span>01</span>
+                    <p>Quick Learner</p>
+                </div>
 
-                <div>01. Quick Learner</div>
+                <div>
+                    <span>02</span>
+                    <p>Problem Solver</p>
+                </div>
 
-                <div>02. Problem Solver</div>
+                <div>
+                    <span>03</span>
+                    <p>Team Player</p>
+                </div>
 
-                <div>03. Team Player</div>
-
-                <div>04. Creative Thinker</div>
+                <div>
+                    <span>04</span>
+                    <p>Creative Thinker</p>
+                </div>
 
             </div>
 
@@ -130,16 +126,12 @@
 
 
 <!-- SKILLS -->
-<section id="skills" class="section skills-section">
+<section id="skills" class="section alternate">
 
-    <div class="section-heading">
-
+    <div class="section-title">
         <p>WHAT I WORK WITH</p>
-
         <h2>My Skills</h2>
-
     </div>
-
 
     <div class="skills-grid">
 
@@ -187,75 +179,65 @@
 <!-- PROJECTS -->
 <section id="projects" class="section">
 
-    <div class="section-heading">
-
+    <div class="section-title">
         <p>MY RECENT WORK</p>
-
         <h2>Projects</h2>
-
     </div>
 
+    <div class="projects-list">
 
-    <div class="projects-container">
+        <article class="project">
 
-        <div class="project-card">
+            <div class="project-index">01</div>
 
-            <div class="project-number">01</div>
-
-            <div>
-
+            <div class="project-info">
                 <h3>Boutique Website</h3>
 
                 <p>
-                    A modern boutique website designed to display products
-                    with an attractive and user-friendly interface.
+                    A modern boutique website designed to showcase
+                    products through a clean and user-friendly interface.
                 </p>
 
-                <span>HTML • CSS • JavaScript</span>
-
+                <small>HTML • CSS • JavaScript</small>
             </div>
 
-        </div>
+        </article>
 
 
-        <div class="project-card">
+        <article class="project">
 
-            <div class="project-number">02</div>
+            <div class="project-index">02</div>
 
-            <div>
-
+            <div class="project-info">
                 <h3>Personal Portfolio</h3>
 
                 <p>
-                    A responsive personal portfolio website to showcase
+                    A responsive portfolio website created to showcase
                     my skills, projects, education and interests.
                 </p>
 
-                <span>HTML • CSS • JavaScript</span>
-
+                <small>HTML • CSS • JavaScript</small>
             </div>
 
-        </div>
+        </article>
 
 
-        <div class="project-card">
+        <article class="project">
 
-            <div class="project-number">03</div>
+            <div class="project-index">03</div>
 
-            <div>
-
+            <div class="project-info">
                 <h3>IT Learning Projects</h3>
 
                 <p>
-                    Academic and practical projects created while learning
-                    different concepts in Information Technology.
+                    Academic and practical projects developed while
+                    learning different concepts in Information Technology.
                 </p>
 
-                <span>Programming • Web • Database</span>
-
+                <small>Programming • Web • Database</small>
             </div>
 
-        </div>
+        </article>
 
     </div>
 
@@ -263,52 +245,38 @@
 
 
 <!-- EDUCATION -->
-<section id="education" class="section education-section">
+<section id="education" class="section alternate">
 
-    <div class="section-heading">
-
+    <div class="section-title">
         <p>MY ACADEMIC JOURNEY</p>
-
         <h2>Education</h2>
-
     </div>
-
 
     <div class="education-list">
 
-        <div class="education-item">
+        <div class="education-row">
 
-            <span class="year">
+            <div class="education-year">
                 2023 — 2026
-            </span>
+            </div>
 
             <div>
-
                 <h3>B.Sc. Information Technology</h3>
-
-                <p>
-                    Undergraduate Degree
-                </p>
-
+                <p>Undergraduate Degree</p>
             </div>
 
         </div>
 
 
-        <div class="education-item">
+        <div class="education-row">
 
-            <span class="year">
+            <div class="education-year">
                 Higher Secondary
-            </span>
+            </div>
 
             <div>
-
                 <h3>Higher Secondary Education</h3>
-
-                <p>
-                    School Education
-                </p>
-
+                <p>School Education</p>
             </div>
 
         </div>
@@ -319,48 +287,32 @@
 
 
 <!-- CONTACT -->
-<section id="contact" class="section contact-section">
+<section id="contact" class="section">
 
-    <div class="section-heading">
-
+    <div class="section-title">
         <p>LET'S CONNECT</p>
-
         <h2>Contact Me</h2>
-
     </div>
 
+    <div class="contact-content">
 
-    <div class="contact-container">
+        <div class="contact-left">
 
-        <div class="contact-info">
-
-            <h3>Have a project or idea?</h3>
+            <h3>Let's create something meaningful.</h3>
 
             <p>
-                I am always interested in learning, collaborating
-                and exploring new opportunities.
+                I am interested in learning, collaborating and
+                exploring new opportunities in technology and web development.
             </p>
 
-
-            <div class="contact-detail">
-
+            <div class="contact-item">
                 <span>Email</span>
-
-                <p>
-                    yourmail@example.com
-                </p>
-
+                <p>yourmail@example.com</p>
             </div>
 
-
-            <div class="contact-detail">
-
+            <div class="contact-item">
                 <span>Location</span>
-
-                <p>
-                    Tamil Nadu, India
-                </p>
-
+                <p>Tamil Nadu, India</p>
             </div>
 
         </div>
@@ -368,25 +320,13 @@
 
         <form class="contact-form">
 
-            <input
-                type="text"
-                placeholder="Your Name"
-            >
+            <input type="text" placeholder="Your Name">
 
-            <input
-                type="email"
-                placeholder="Your Email"
-            >
+            <input type="email" placeholder="Your Email">
 
-            <textarea
-                rows="5"
-                placeholder="Your Message"
-            ></textarea>
+            <textarea rows="5" placeholder="Your Message"></textarea>
 
-            <button
-                type="submit"
-                class="btn primary"
-            >
+            <button type="submit" class="btn primary">
                 Send Message
             </button>
 
@@ -397,17 +337,9 @@
 </section>
 
 
-<!-- FOOTER -->
 <footer>
-
-    <p>
-        © 2026 Madhu. All Rights Reserved.
-    </p>
-
-    <p>
-        Designed &amp; Developed with creativity.
-    </p>
-
+    <p>© 2026 Madhu. All Rights Reserved.</p>
+    <p>Designed & Developed with creativity.</p>
 </footer>
 
 
