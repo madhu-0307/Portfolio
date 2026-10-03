@@ -65,64 +65,98 @@
 
 
 <!-- ABOUT -->
-<section id="about" class="section">
+/* ABOUT */
 
-    <div class="section-title">
-        <p>GET TO KNOW ME</p>
-        <h2>About Me</h2>
-    </div>
+.about-content {
+    max-width: 950px;
+    margin: auto;
 
-    <div class="about-content">
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 75px;
 
-        <div class="about-heading">
-            <h3>
-                Curious by nature,<br>
-                creative by choice.
-            </h3>
-        </div>
+    align-items: center;
+}
 
-        <div class="about-description">
+.about-name {
+    font-family: "DM Mono", monospace;
+    color: var(--purple);
 
-            <p>
-                I am a final-year B.Sc. Information Technology student
-                with a strong interest in web development and modern technologies.
-            </p>
+    font-size: 12px;
+    letter-spacing: 2px;
 
-            <p>
-                I enjoy creating clean, responsive and user-friendly websites.
-                I am always interested in learning new technologies,
-                improving my skills and exploring creative ideas through projects.
-            </p>
+    margin-bottom: 15px;
+}
 
-            <div class="qualities">
+.about-heading h3 {
+    font-family: "Playfair Display", serif;
 
-                <div>
-                    <span>01</span>
-                    <p>Quick Learner</p>
-                </div>
+    font-size: 35px;
+    font-weight: 500;
 
-                <div>
-                    <span>02</span>
-                    <p>Problem Solver</p>
-                </div>
+    line-height: 1.4;
+}
 
-                <div>
-                    <span>03</span>
-                    <p>Team Player</p>
-                </div>
+.about-description p {
+    color: var(--muted);
+    font-size: 14px;
 
-                <div>
-                    <span>04</span>
-                    <p>Creative Thinker</p>
-                </div>
+    margin-bottom: 18px;
+}
 
-            </div>
 
-        </div>
+/* QUALITY BOXES */
 
-    </div>
+.qualities {
+    margin-top: 35px;
 
-</section>
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+.quality-box {
+    min-height: 90px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.quality-box:hover {
+    border-color: var(--purple);
+
+    background: rgba(139, 92, 246, 0.07);
+
+    transform: translateY(-4px);
+}
+
+.quality-box span {
+    font-family: "DM Mono", monospace;
+
+    color: var(--purple);
+
+    font-size: 10px;
+
+    margin-bottom: 7px;
+}
+
+.quality-box h4 {
+    color: var(--text);
+
+    font-size: 14px;
+    font-weight: 500;
+}
 
 
 <!-- SKILLS -->
