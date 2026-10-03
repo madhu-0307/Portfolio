@@ -178,4 +178,574 @@
         }
 
         .btn-outline {
-            border:
+            border: 1px solid var(--border);
+            color: white;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--purple);
+            color: var(--purple);
+        }
+
+        /* ABOUT */
+
+        #about {
+            background: var(--bg-light);
+        }
+
+        .about-content {
+            max-width: 950px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-name {
+            font-family: "DM Mono", monospace;
+            color: var(--purple);
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .about-heading h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 38px;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        .about-description p {
+            color: var(--muted);
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        /* QUALITY BOXES */
+
+        .qualities {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .quality-box {
+            min-height: 90px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: rgba(255,255,255,0.025);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .quality-box:hover {
+            transform: translateY(-4px);
+            border-color: var(--purple);
+            background: rgba(155,108,255,0.08);
+        }
+
+        .quality-box span {
+            font-family: "DM Mono", monospace;
+            color: var(--purple);
+            font-size: 10px;
+            margin-bottom: 6px;
+        }
+
+        .quality-box h4 {
+            color: var(--text);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* SKILLS */
+
+        #skills {
+            background: var(--bg);
+        }
+
+        .skills-container {
+            max-width: 850px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .skill-box {
+            padding: 25px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: rgba(255,255,255,0.025);
+        }
+
+        .skill-box h3 {
+            color: var(--purple);
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .skill-box p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* PROJECTS */
+
+        #projects {
+            background: var(--bg-light);
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            padding: 30px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.025);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--purple);
+        }
+
+        .project-card h3 {
+            color: var(--purple);
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* EDUCATION */
+
+        #education {
+            background: var(--bg);
+        }
+
+        .education-box {
+            max-width: 750px;
+            margin: auto;
+            padding: 30px;
+            border-left: 3px solid var(--purple);
+            background: rgba(255,255,255,0.025);
+        }
+
+        .education-box h3 {
+            color: var(--purple);
+            margin-bottom: 8px;
+        }
+
+        .education-box p {
+            color: var(--muted);
+            margin-bottom: 5px;
+        }
+
+        /* CONTACT */
+
+        #contact {
+            background: var(--bg-light);
+            text-align: center;
+        }
+
+        .contact-text {
+            max-width: 600px;
+            margin: auto;
+            color: var(--muted);
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            padding: 15px 25px;
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            color: var(--muted);
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid var(--border);
+            background: var(--bg);
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                padding: 18px 20px;
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 11px;
+            }
+
+            .home-content h1 {
+                font-size: 48px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .skills-container,
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 34px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+        <div class="navbar">
+
+            <div class="logo">
+                Madhu<span>.</span>
+            </div>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- HOME -->
+
+    <section id="home">
+
+        <div class="home-content">
+
+            <div class="home-small">
+                HELLO, I'M MADHU
+            </div>
+
+            <h1>
+                Creative <span>IT</span><br>
+                Student
+            </h1>
+
+            <p>
+                I am an enthusiastic Information Technology student
+                interested in creating creative, useful and user-friendly
+                digital experiences.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    View My Projects
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="section-label">
+                WHO I AM
+            </div>
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <div class="about-content">
+
+                <div class="about-heading">
+
+                    <div class="about-name">
+                        MADHU
+                    </div>
+
+                    <h3>
+                        Learning, creating<br>
+                        and growing every day.
+                    </h3>
+
+                </div>
+
+                <div class="about-description">
+
+                    <p>
+                        I am Madhu, a passionate Information Technology
+                        student with an interest in web development,
+                        creative design and modern technologies.
+                    </p>
+
+                    <p>
+                        I enjoy learning new skills, solving problems and
+                        working on projects that allow me to combine
+                        technology with creativity.
+                    </p>
+
+                    <div class="qualities">
+
+                        <div class="quality-box">
+                            <span>01</span>
+                            <h4>Quick Learner</h4>
+                        </div>
+
+                        <div class="quality-box">
+                            <span>02</span>
+                            <h4>Problem Solver</h4>
+                        </div>
+
+                        <div class="quality-box">
+                            <span>03</span>
+                            <h4>Team Player</h4>
+                        </div>
+
+                        <div class="quality-box">
+                            <span>04</span>
+                            <h4>Creative Thinker</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <div class="container">
+
+            <div class="section-label">
+                WHAT I WORK WITH
+            </div>
+
+            <h2 class="section-title">
+                My Skills
+            </h2>
+
+            <div class="skills-container">
+
+                <div class="skill-box">
+                    <h3>HTML</h3>
+                    <p>
+                        Creating structured and responsive web pages.
+                    </p>
+                </div>
+
+                <div class="skill-box">
+                    <h3>CSS</h3>
+                    <p>
+                        Designing attractive layouts and modern interfaces.
+                    </p>
+                </div>
+
+                <div class="skill-box">
+                    <h3>JavaScript</h3>
+                    <p>
+                        Adding interaction and functionality to websites.
+                    </p>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Database</h3>
+                    <p>
+                        Understanding database concepts and SQL.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <div class="section-label">
+                MY WORK
+            </div>
+
+            <h2 class="section-title">
+                Projects
+            </h2>
+
+            <div class="projects-container">
+
+                <div class="project-card">
+
+                    <h3>Boutique Website</h3>
+
+                    <p>
+                        A modern boutique website designed to display
+                        products, wishlist, cart and other useful
+                        e-commerce features.
+                    </p>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h3>Portfolio Website</h3>
+
+                    <p>
+                        A personal portfolio website showcasing my
+                        skills, education, projects and interests
+                        in Information Technology.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+
+    <section id="education">
+
+        <div class="container">
+
+            <div class="section-label">
+                MY JOURNEY
+            </div>
+
+            <h2 class="section-title">
+                Education
+            </h2>
+
+            <div class="education-box">
+
+                <h3>
+                    Bachelor of Science in Information Technology
+                </h3>
+
+                <p>
+                    Final Year Student
+                </p>
+
+                <p>
+                    Information Technology Department
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="section-label">
+                GET IN TOUCH
+            </div>
+
+            <h2 class="section-title">
+                Contact Me
+            </h2>
+
+            <p class="contact-text">
+                I am always interested in learning new things,
+                exploring opportunities and connecting with
+                people who share an interest in technology.
+            </p>
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+                    Email: yourmail@gmail.com
+                </div>
+
+                <div class="contact-item">
+                    Location: Tamil Nadu
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Madhu. All Rights Reserved.
+    </footer>
+
+
+</body>
+</html>
